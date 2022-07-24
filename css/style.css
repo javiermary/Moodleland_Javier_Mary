@@ -55,7 +55,7 @@ h1{
     color: #F98012;
     padding: 40px;
     text-align: center;
-    border: 20px solid #F98012;
+    border: 10px solid #F98012;
     margin: 50px 40px 50px 40px;
     }
 
@@ -101,7 +101,7 @@ h1{
     gap:20px;
     justify-items: center;
     background-color: beige;
-    border: 20px solid #F98012;
+    border: 10px solid #F98012;
     
 }
 
@@ -247,6 +247,15 @@ color: #2c1805;
 /*Media Query - FIN*/
 
 
+.clientes{
+    color: #F98012;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    border: 10px solid #F98012;
+    margin: 50px 40px 50px 40px;
+}
+
 
 .video{
     display: flex;
@@ -262,7 +271,6 @@ color: #2c1805;
 }
 
 
-
 footer{
     display: flex;
     justify-content: center;
@@ -271,13 +279,4 @@ footer{
     margin-bottom: 0px;
     background-color: beige;
 }
-
-
-/* Sction - NOSOTROS 
-
-
-*/
-
- 
-
 
