@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MoodleLand</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- encabezado -->
+        <nav>
+                        <!-- emlaces relativos -->
+            <ul>
+                <li>
+                    <a href="../index.html"><img class="logoHeader" src="../images/Logo.png" alt="Moodleland"></a>
+                </li>
+                <li>
+                    <a href="./servicios.html">Servicios</a>     
+                </li>
+                <li>
+                    <a href="./casos.html">Casos</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div>
+
+        <img src="../images/Contacto.jpg" alt="Imagen Contacto Moodleland" class="imgHero">
+    
+    </div>
+
+	<section>
+        <h1 class="destacado">CONTACTO</h1>
+    </section>
+
+	
+    <!-- formulario de contacto -->
+	
+    <section>
+		<article class="formulario">
+			<form action="#">
+				<label for="Nombre y Apellido">Persona a contactar:<br>
+                <input type="text" placeholder="Nombre y Apellido"><br><br>
+				<label for="email">Email corporativo:<br>
+					<input type="email" placeholder="tuNombre@tuempresa.com" name="email"><br><br>
+				</label>
+				<label for="Consulta"> Dejanos tus consulta:<br><br>
+					<textarea placeholder="Consulta"></textarea><br><br>
+                    <label for="Cantidad de empleados"> Cantidad de empleados:<br><br>
+				<input type="number" placeholder="Cantidad de empleados"><br><br>
+				<div><p">¿Te gustaría recibir nuiestra newsletter semanal?:</p>
+					<div>SI
+						<input type="radio" name="Newsletter" value="si">
+					</div>
+					<div>NO
+						<input type="radio" name="Newsletter" value="no">
+					</div>
+				</div>
+				<p>¿Vía de comunicación preferida?</p>
+				<select name="letra" id="letra"> 
+					<option value="email">Email</option>
+					<option value="whatsapp">Whatsapp</option>
+					<option value="telegram">Telegram</option>
+				</select><br>
+                <br>
+				<div>
+                    Acepto la política de privacidad
+                </div>
+				<input type="checkbox" name="acepta" value="1"><br>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpiar formulario">
+			</form>
+        </article>
+	</section>
+
+    <footer id="footer">
+        <h4>Copyright 2022  |  Moodleland</h4>
+      </footer>
+
+</body>
+</html>
