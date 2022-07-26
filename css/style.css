@@ -20,7 +20,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:#F98012;
+    background-image: linear-gradient(yellow,#F98012 );
     position: sticky;
     font-size: 16px;
    
@@ -57,7 +57,21 @@ h1{
     text-align: center;
     border: 10px solid #F98012;
     margin: 50px 40px 50px 40px;
-    }
+    animation-duration: 2s;
+    animation-name: animate__pulse;
+    animation-iteration-count: infinite;
+
+}
+
+    @keyframes animate__pulse {
+        80% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+     }
+     
 
 .destacado{
 
@@ -70,7 +84,8 @@ h1{
     padding: 20px;
     text-align: center;
     font-size: 35px;
-   
+    animate__rubberBand
+     
 }
 
 .imgHero{
@@ -159,10 +174,21 @@ color: #2c1805;
 
 }
 
+ /* Logos de Clientes de Moodleland*/
+
+     .galeriaClientes{
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+           
+        }
 
 
 /*Media Query - INICIO*/
-
 
 @media (min-width:500px){
 
@@ -181,13 +207,25 @@ color: #2c1805;
         
          }
 
-.contenedor-servicios{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
+    .contenedor-servicios{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+
+    }
+
+    .imgNosotros{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        object-fit: cover;
+        margin: 100px 100px 100px 100px;
+        transform: skewY(35deg)
+    
+    }
+
+
 
 }
-
-
 
 @media (min-width:768px){
 
@@ -241,6 +279,8 @@ color: #2c1805;
         
          }
 
+           
+
 }
 
 
@@ -256,12 +296,32 @@ color: #2c1805;
     margin: 50px 40px 50px 40px;
 }
 
+h5{
+
+    color: #F98012;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+        
+}
+
 
 .video{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     object-fit: cover;
+}
+
+.imgNosotros{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    margin: 100px 100px 100px 100px;
+    transform: skewY(25deg)
+
 }
 
 .formulario{
@@ -277,6 +337,7 @@ footer{
     padding: 50px;
     margin-top: 30px;
     margin-bottom: 0px;
-    background-color: beige;
+    background-image: linear-gradient(#F98012, yellow);
+
 }
 
