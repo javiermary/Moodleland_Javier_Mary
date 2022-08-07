@@ -84,8 +84,7 @@ h1{
     padding: 20px;
     text-align: center;
     font-size: 35px;
-    animate__rubberBand
-     
+
 }
 
 .imgHero{
@@ -263,7 +262,8 @@ color: #2c1805;
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
     
-    
+    }
+
     .logoHeader{
         width: 260px;
         
@@ -278,8 +278,7 @@ color: #2c1805;
         padding: 15px;
         
          }
-
-           
+       
 
 }
 
@@ -314,6 +313,7 @@ h5{
 }
 
 .imgNosotros{
+
     display: flex;
     justify-content: center;
     object-fit: cover;
@@ -325,19 +325,21 @@ h5{
 }
 
 .formulario{
+
     display: flex;
     justify-content: center;
 
 }
 
-
 footer{
+
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     background-image: linear-gradient(#F98012, yellow);
 
 }
-
+   
+}
