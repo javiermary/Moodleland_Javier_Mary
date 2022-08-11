@@ -1,0 +1,31 @@
+header{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(yellow,#F98012 );
+    position: sticky;
+    font-size: 16px;
+    flex-basis: 100%;
+
+    .logoHeader {
+        display: flex;
+        width: 260px;
+               
+        nav ul li{
+        display: inline-flexbox; 
+        object-fit: cover;
+        padding: 15px;        
+          
+            a{
+            text-decoration: none;
+            color: aliceblue;
+            text-transform: uppercase;
+            list-style: none;
+      
+            } 
+
+        }
+    }    
+
+}

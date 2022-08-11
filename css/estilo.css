@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(235, 230, 222);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(yellow, #F98012);
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 16px;
+  flex-basis: 100%;
+}
+header .logoHeader {
+  display: flex;
+  width: 260px;
+}
+header .logoHeader nav ul li {
+  display: inline-flexbox;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 15px;
+}
+header .logoHeader nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #F98012;
+  padding: 40px;
+  text-align: center;
+  border: 10px solid #F98012;
+  margin: 50px 40px 50px 40px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: animate__pulse;
+          animation-name: animate__pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animate__pulse {
+  80% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate__pulse {
+  80% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.destacado {
+  font-size: 40px;
+}
+
+.bajada {
+  color: #F98012;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.imgHero {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Contenedor principal - con Grid - Home*/
+.contenedor-home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+/* Contenedores internos y Cards - Grid y flex - Home*/
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  background-color: beige;
+  border: 10px solid #F98012;
+}
+
+.card-servicios {
+  min-height: 500px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: beige;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+}
+
+.banner ul {
+  list-style: none;
+}
+
+.banner ul li {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 35px;
+  color: #2c1805;
+}
+
+.titulo-banner {
+  font-size: 40px;
+  color: #2c1805;
+}
+
+/* Logos de Clientes de Moodleland*/
+.galeriaClientes {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/*Media Query - INICIO*/
+@media (min-width: 500px) {
+  header {
+    background-color: #F98012;
+    position: -webkit-sticky;
+    position: sticky;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imgNosotros {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 100px 100px 100px 100px;
+    transform: skewY(35deg);
+  }
+}
+@media (min-width: 768px) {
+  header {
+    background-color: #F98012;
+    position: -webkit-sticky;
+    position: sticky;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  ul li {
+    display: inline-flex;
+    padding: 15px;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*Media Query - FIN*/
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  header {
+    background-color: #F98012;
+    position: -webkit-sticky;
+    position: sticky;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logoHeader {
+    width: 260px;
+  }
+  body {
+    background-color: rgb(235, 230, 222);
+  }
+  ul li {
+    display: inline-flex;
+    padding: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .clientes {
+    color: #F98012;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    border: 10px solid #F98012;
+    margin: 50px 40px 50px 40px;
+  }
+}
+@media (min-width: 768px) {
+  h5 {
+    color: #F98012;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .imgNosotros {
+    display: flex;
+    justify-content: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 500px;
+    height: 500px;
+    margin: 100px 100px 100px 100px;
+    transform: skewY(25deg);
+  }
+}
+@media (min-width: 768px) {
+  .formulario {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(#F98012, yellow);
+  }
+}
+/* Clases acordeón Home Page */
+.accordion {
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.accordion-item {
+  background-color: rgb(235, 230, 222);
+}
+
+/* Clases pestaña SERVICIOS */
+.card {
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card-img-top {
+  max-width: 400px;
+}
+
+.parrafos-servicios {
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}/*# sourceMappingURL=estilo.css.map */
