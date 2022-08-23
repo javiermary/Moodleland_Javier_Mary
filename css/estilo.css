@@ -38,6 +38,7 @@ header .logoHeader nav ul li a {
   text-decoration: none;
   color: aliceblue;
   text-transform: uppercase;
+  list-style: none;
 }
 
 h1 {
@@ -284,9 +285,9 @@ h1 {
   .footer {
     display: flex;
     justify-content: center;
-    padding: 50px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     background-image: linear-gradient(#F98012, yellow);
   }
 }
@@ -302,20 +303,102 @@ h1 {
   background-color: rgb(235, 230, 222);
 }
 
+.accordion-button {
+  background-color: #F98012;
+  height: 45px;
+  color: white;
+}
+
+.accordion-body {
+  padding: 8px 12px;
+  background-color: rgb(235, 230, 222);
+}
+
 /* Clases pestaña SERVICIOS */
 .card {
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .card-img-top {
-  max-width: 400px;
+  max-width: 330px;
 }
 
 .parrafos-servicios {
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+/* Clases pestaña NOSOTROS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(235, 230, 222);
+  color: #F98012;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* Clases pestaña NOSOTROS *//*# sourceMappingURL=estilo.css.map */
